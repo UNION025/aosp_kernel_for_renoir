@@ -1,4 +1,4 @@
-[abi_whitelist]
+[abi_symbol_list]
 # required by cs35l41_dlkm.ko
   regmap_async_complete
   regmap_multi_reg_write
@@ -10,6 +10,7 @@
   snd_soc_get_volsw_range
   snd_soc_info_volsw_range
   snd_soc_put_volsw_range
+  snd_compr_stop_error
 
 # required by cs35l45_dlkm.ko
   devm_snd_soc_register_component
@@ -105,6 +106,5 @@
   utf8s_to_utf16s
   write_inode_now
 
-# required by goodix_core.ko
-  filp_close
-  filp_open
+# required by incrementalfs.ko
+  revert_creds
